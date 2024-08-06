@@ -21,3 +21,8 @@ Implementações de repositórios.
 Conexões com serviços externos e integrações.
 
 Ao criar o diagrama, considere a separação de responsabilidades e a independência dos componentes. Isso permitirá uma maior flexibilidade e manutenção do projeto. Utilize ferramentas como UML ou qualquer outro software de diagramação que preferirem.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Para abrir o arquivo no navegador clique com o botão direito do mouse sobre o arquivo e clique em "Open with Live Server".

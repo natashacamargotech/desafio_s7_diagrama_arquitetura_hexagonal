@@ -3,48 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagrama de Arquitetura Hexagonal</title>
+    <title>Diagrama UML - Arquitetura Hexagonal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f4;
         }
         .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            margin-top: 20px;
+            align-items: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         .box {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            border: 2px solid #333;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background-color: #fff;
+            margin: 10px;
             padding: 20px;
             width: 300px;
-            margin: 10px;
             text-align: center;
-        }
-        .flex {
-            display: flex;
-            justify-content: space-around;
-        }
-        .section {
-            margin: 10px;
         }
         .title {
             font-weight: bold;
             margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .section {
+            margin: 15px 0;
+            text-align: left;
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .arrow {
+            margin: 10px;
+            border-left: 2px solid #333;
+            height: 50px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Diagrama de Arquitetura Hexagonal</h1>
-          <div class="box">
+
+        <div class="box">
             <div class="title">Application</div>
             <div class="section">
                 <div class="title">* Controllers</div>
@@ -60,6 +71,8 @@
                 <p>client.dto.ts</p>
             </div>
         </div>
+
+        <div class="arrow"></div>
         <div class="flex">
             <div class="box">
                 <div class="title">Domain</div>
@@ -87,28 +100,27 @@
                 </div>
                 <div class="section">
                     <div class="title">* Interfaces</div>
-              
+     
                 </div>
                 <div class="section">
                     <div class="title">* Validators</div>
-              
+                   
                 </div>
             </div>
-            <div class="box">
-                <div class="title">Infrastructure</div>
-                <div class="section">
-                    <div class="title">* Banco de dados</div>
-              
-                </div>
-                <div class="section">
-                    <div class="title">* Repository</div>
-                    
-                </div>
-               
-                <div class="section">
-                    <div class="title">* External Service</div>
-                    <p>Master/Visa</p>
-                </div>
+        </div>
+
+        <div class="arrow"></div>
+
+        <div class="box">
+            <div class="title">Infrastructure</div>
+            <div class="section">
+                <div class="title">* Banco de dados</div>
+            </div>
+            <div class="section">
+                <div class="title">* Repository</div>
+            </div>
+            <div class="section">
+                <div class="title">* External Service</div>
             </div>
         </div>
     </div>
